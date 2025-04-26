@@ -1,14 +1,17 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
 
 const Userdata = ({ users = [] }) => {
+  const [userList, setUserList] = useState(users); // Use local state to manage users
+ 
   const handeldelete = async (id) => {
     try {
       await axios.delete(`http://localhost:3000/api/Delete?id=${id}`).then((res) => {
         alert('Request Deleted Successfully');
-        window.location.reload();
+        // Update the local state instead of reloading the page
+        setUserList(userList.filter((user) => user._id !== id));
       });
     } catch (error) {
       console.log('Error in deleting:', error);
@@ -31,8 +34,8 @@ const Userdata = ({ users = [] }) => {
             </tr>
           </thead>
           <tbody>
-            {Array.isArray(users) && users.length > 0 ? (
-              users.map((user) => (
+            {Array.isArray(userList) && userList.length > 0 ? (
+              userList.map((user) => (
                 <tr key={user._id} className="hover:bg-gray-100 transition duration-300">
                   <td className="py-3 px-4 border-b border-gray-200 text-sm md:text-base text-gray-700">{user.Name}</td>
                   <td className="py-3 px-4 border-b border-gray-200 text-sm md:text-base text-gray-700">{user.email}</td>

@@ -1,9 +1,14 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState ,useEffect} from "react";
 import axios from "axios";
 import { motion } from "framer-motion";
 
-const Page = () => {
+const page = () => {
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      console.log("Window is available");
+    }
+  }, []);
   const [user, setuser] = useState({
     Name: "",
     email: "",
@@ -31,6 +36,7 @@ const Page = () => {
       alert("Failed to send the request. Please try again.");
     }
   };
+  
 
   return (
     <motion.div
@@ -124,4 +130,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default page;

@@ -1,16 +1,20 @@
+"use client";
+import dynamic from "next/dynamic";
 
-import First from "@/components/First";
-import Second from "@/components/Second";
-import Third from "@/components/Third";
-import Fourth from "@/components/Fourth";
-import Sixth from "@/components/Sixth";
-import Seventh from "@/components/Seventh";
+const First = dynamic(() => import("@/components/First"), { ssr: false });
+const Second = dynamic(() => import("@/components/Second"), { ssr: false });
+const Third = dynamic(() => import("@/components/Third"), { ssr: false });
+const Fourth = dynamic(() => import("@/components/Fourth"), { ssr: false });
+const Sixth = dynamic(() => import("@/components/Sixth"), { ssr: false });
+const Seventh = dynamic(() => import("@/components/Seventh"), { ssr: false });
 
 
 
 
 export default function Home() {
+ 
   return (
+    <>
     <div className="md:mt-0">
       
         <First />
@@ -21,5 +25,6 @@ export default function Home() {
       <Sixth />
       <Seventh />
     </div>
+    </>
   );
 }
