@@ -1,21 +1,18 @@
 "use client";
 import React from "react";
-import Image from "next/image";
-import pic3 from "../../public/pic3.jpg";
-
+import pic3 from "../../public/pic3.jpg"; // Ensure the image is in the public directory
 
 const First = () => {
-  
-
   return (
-    <div className="h-[20rem] md:h-[45rem] lg:h-[50rem] w-full flex justify-center items-center">
-      <Image
-        src={pic3}
-        alt="front"
-        layout="fill" // Makes the image responsive
-        objectFit="cover" // Ensures the image scales properly
-        priority // Optimizes the image for faster loading
-      />
+    <div
+      className="h-[20rem] md:h-[45rem] lg:h-[50rem] w-full flex justify-center items-center bg-cover bg-center"
+      style={{
+        backgroundImage: `url(${pic3.src})`, // Set the image as the background
+      }}
+    >
+      <section>
+        
+      </section>
     </div>
   );
 };

@@ -2,7 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import dg4 from "../../public/dg4.png";
+import dg4 from "../../public/dg4.webp"; // Ensure the image is in the public directory
 
 const Fourth = () => {
   return (
@@ -42,14 +42,13 @@ const Fourth = () => {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1 }}
       >
-        <div className="relative">
+        <div className="relative h-full w-full mt-1">
           <Image
             src={dg4}
-            alt="connect"
-            layout="responsive"
-            width={1200}
-            height={500}
-            className="rounded-lg  transition-transform duration-300 group-hover:scale-105 "
+            alt="strategy"
+            layout="fill" // Makes the image cover the entire container
+            objectFit="cover" // Ensures the image scales properly
+            className="rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-105 group-hover:shadow-2xl"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover:opacity-50 transition-opacity duration-300 rounded-lg"></div>
         </div>

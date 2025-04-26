@@ -33,19 +33,19 @@ const Sixth = () => {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1 }}
       >
-        <div className="bg-white h-auto md:h-[650px] w-full md:w-[610px] p-4 md:p-0 rounded-lg shadow-lg">
-          <div className="mt-8 md:mt-32">
-            <h1 className="text-2xl md:text-4xl font-bold underline-offset-8 text-center md:text-left md:ml-32 text-black">
+        <div className="bg-white h-auto md:h-[650px] w-full md:w-[650px] p-4 md:p-0 rounded-lg shadow-lg">
+          <div className="mt-8 md:mt-28">
+            <h1 className="text-2xl md:text-4xl font-bold underline-offset-8 text-center md:text-left md:ml-24 text-black">
               Strategy,<br /> Creativity & Results!
             </h1>
             <br />
-            <h2 className="text-lg md:text-xl font-mono italic text-center md:text-left md:ml-32 text-gray-700">
-              Our approach is backed by <br /> strategy, creativity, and optimized <br /> for results.
+            <h2 className="text-lg md:text-xl font-mono italic text-center md:text-left md:ml-24 text-gray-700">
+              Our approach is backed by  strategy, creativity, and optimized  for results.
             </h2>
             <br />
-            <p className="text-base md:text-lg text-gray-500 text-center md:text-left md:ml-32 leading-relaxed">
-              We understand that each client and <br /> each project we undertake is different<br /> and so we have developed a <br /> repeatable process that we know <br />
-              works. Our methodology puts the user <br /> at the heart of the experience from <br /> the start. By working iteratively <br /> through a pre-defined set of stages, we <br /> create beautiful and usable solutions <br /> that work hard and deliver targeted results.
+            <p className="text-base md:text-lg text-gray-500 text-center md:text-left md:ml-24 leading-relaxed">
+              We understand that each client and  each  project we <br /> undertake  is  different and so we have developed a <br />  repeatable  process that   we  know 
+              works. Our methodology<br /> puts the user  at the heart of the  experience from  the start. <br />By working iteratively  through a  pre-defined set of stages,<br /> we  create beautiful and usable  solutions  that work hard and <br /> deliver targeted results.
             </p>
             <br />
           </div>
