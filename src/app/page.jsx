@@ -1,10 +1,15 @@
+import dynamic from "next/dynamic";
+
+const First = dynamic(() => import("@/components/First"));
+const Second = dynamic(() => import("@/components/Second"));
+const Third = dynamic(() => import("@/components/Third"));
+const Fourth = dynamic(() => import("@/components/Fourth"));
+const Sixth = dynamic(() => import("@/components/Sixth"));
+const Seventh = dynamic(() => import("@/components/Seventh"));
 
 
 
 
-
-
-import Extra from "@/components/Extra";
 import First from "@/components/First";
 import Fourth from "@/components/Fourth";
 
