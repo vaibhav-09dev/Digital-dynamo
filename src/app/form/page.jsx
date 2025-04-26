@@ -17,11 +17,19 @@ const page = () => {
     try {
       await axios.post('http://localhost:3000/api/ConsumerData', user).then((res) => {
         alert('Request sent successfully!');
-        window.location.reload();
+        setuser({
+          Name: '',
+          email: '',
+          subject: '',
+          message: '',
+          phone: '',
+        });
+        
       });
       await axios.get('http://localhost:3000/api/Sendmail');
     } catch (error) {
       console.log('Error in sending:', error);
+      alert("Failed to send the request. Please try again.");
     }
   };
 
