@@ -1,34 +1,33 @@
-'use client';
-import React, { useState } from 'react';
-import axios from 'axios';
-import { motion } from 'framer-motion';
+"use client";
+import React, { useState } from "react";
+import axios from "axios";
+import { motion } from "framer-motion";
 
-const page = () => {
+const Page = () => {
   const [user, setuser] = useState({
-    Name: '',
-    email: '',
-    subject: '',
-    message: '',
-    phone: '',
+    Name: "",
+    email: "",
+    subject: "",
+    message: "",
+    phone: "",
   });
 
   const Send = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:3000/api/ConsumerData', user).then((res) => {
-        alert('Request sent successfully!');
+      await axios.post("http://localhost:3000/api/ConsumerData", user).then((res) => {
+        alert("Request sent successfully!");
         setuser({
-          Name: '',
-          email: '',
-          subject: '',
-          message: '',
-          phone: '',
+          Name: "",
+          email: "",
+          subject: "",
+          message: "",
+          phone: "",
         });
-        
       });
-      await axios.get('http://localhost:3000/api/Sendmail');
+      await axios.get("http://localhost:3000/api/Sendmail");
     } catch (error) {
-      console.log('Error in sending:', error);
+      console.log("Error in sending:", error);
       alert("Failed to send the request. Please try again.");
     }
   };
@@ -125,4 +124,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
