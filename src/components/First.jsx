@@ -13,8 +13,8 @@ const First = () => {
   
   
   return (
-    <div className="md:h-220 w-121 h-66 md:w-400 flex justify-center items-center  ">
-      <Image src={pic3} height={800} width={1500} alt="front"  />
+    <div className="h-[20rem] md:h-[45rem] lg:h-[50rem] md:w-full flex justify-center items-center  ">
+      <Image src={pic3} height={600} width={1400} alt="front"  />
      
 
       
