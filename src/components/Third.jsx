@@ -25,7 +25,7 @@ const Third = () => {
       <div className="relative flex items-center justify-center w-full md:w-1/2">
         <DirectionAwareHover imageUrl={imageUrl}>
           <div className="group relative">
-            <p className="font-extrabold text-2xl md:text-5xl text-green-500 md:group-hover:scale-110 md:group-hover:text-green-600 transition-transform duration-300 drop-shadow-lg">
+            <p className="font-extrabold text-2xl md:text-5xl text-green-500 group-open:scale-105 md:group-hover:scale-110 md:group-hover:text-green-600 transition-transform duration-300 drop-shadow-lg">
               Social Media Marketing
             </p>
             <p className="font-light text-sm md:text-base text-gray-1000 md:group-hover:translate-y-2 transition-transform duration-300">
