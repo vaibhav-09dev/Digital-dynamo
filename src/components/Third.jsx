@@ -25,10 +25,10 @@ const Third = () => {
       <div className="relative flex items-center justify-center w-full md:w-1/2">
         <DirectionAwareHover imageUrl={imageUrl}>
           <div className="group relative">
-            <p className="font-extrabold text-5xl text-green-500 group-hover:scale-110 group-hover:text-green-600 transition-transform duration-300 drop-shadow-lg">
+            <p className="font-extrabold text-2xl md:text-5xl text-green-500 md:group-hover:scale-110 md:group-hover:text-green-600 transition-transform duration-300 drop-shadow-lg">
               Social Media Marketing
             </p>
-            <p className="font-light text-sm text-gray-1000 group-hover:translate-y-2 transition-transform duration-300">
+            <p className="font-light text-sm md:text-base text-gray-1000 md:group-hover:translate-y-2 transition-transform duration-300">
               Engage your audience with impactful campaigns.
             </p>
           </div>
@@ -40,10 +40,10 @@ const Third = () => {
         <div className="relative flex items-center justify-center">
           <DirectionAwareHover2 imageUrl={imageUrl1}>
             <div className="group relative">
-              <p className="font-extrabold text-5xl text-center text-green-500 group-hover:scale-110 group-hover:text-green-600 transition-transform duration-300 drop-shadow-lg">
+              <p className="font-extrabold text-2xl md:text-5xl text-center text-green-500 md:group-hover:scale-110 md:group-hover:text-green-600 transition-transform duration-300 drop-shadow-lg">
                 Performance Marketing
               </p>
-              <p className="font-light text-sm text-gray-1000 group-hover:translate-y-2 transition-transform duration-300">
+              <p className="font-light text-sm md:text-base text-gray-1000 md:group-hover:translate-y-2 transition-transform duration-300">
                 Drive results with data-driven strategies.
               </p>
             </div>
@@ -52,10 +52,10 @@ const Third = () => {
         <div className="relative flex items-center justify-center">
           <DirectionAwareHover3 imageUrl={imageUrl2}>
             <div className="group relative">
-              <p className="font-extrabold text-5xl text-center text-green-500 group-hover:scale-110 group-hover:text-green-600 transition-transform duration-300 drop-shadow-lg">
+              <p className="font-extrabold text-2xl md:text-5xl text-center text-green-500 md:group-hover:scale-110 md:group-hover:text-green-600 transition-transform duration-300 drop-shadow-lg">
                 Web Analytics
               </p>
-              <p className="font-light text-sm text-gray-1000 group-hover:translate-y-2 transition-transform duration-300">
+              <p className="font-light text-sm md:text-base text-gray-1000 md:group-hover:translate-y-2 transition-transform duration-300">
                 Analyze and optimize your online presence.
               </p>
             </div>
@@ -64,10 +64,10 @@ const Third = () => {
         <div className="relative flex items-center justify-center">
           <DirectionAwareHover4 imageUrl={imageUrl3}>
             <div className="group relative">
-              <p className="font-extrabold text-4xl text-center text-green-500 group-hover:scale-110 group-hover:text-green-600 transition-transform duration-300 drop-shadow-lg">
+              <p className="font-extrabold text-2xl md:text-4xl text-center text-green-500 md:group-hover:scale-110 md:group-hover:text-green-600 transition-transform duration-300 drop-shadow-lg">
                 Website Design & Development
               </p>
-              <p className="font-light text-sm text-gray-1000 group-hover:translate-y-2 transition-transform duration-300">
+              <p className="font-light text-sm md:text-base text-gray-1000 md:group-hover:translate-y-2 transition-transform duration-300">
                 Build stunning and functional websites.
               </p>
             </div>
@@ -76,10 +76,10 @@ const Third = () => {
         <div className="relative flex items-center justify-center">
           <DirectionAwareHover5 imageUrl={imageUrl4}>
             <div className="group relative">
-              <p className="font-extrabold text-4xl text-center text-green-500 group-hover:scale-110 group-hover:text-green-600 transition-transform duration-300 drop-shadow-lg">
+              <p className="font-extrabold text-2xl md:text-4xl text-center text-green-500 md:group-hover:scale-110 md:group-hover:text-green-600 transition-transform duration-300 drop-shadow-lg">
                 Search Engine Optimization
               </p>
-              <p className="font-light text-sm text-gray-1000 group-hover:translate-y-2 transition-transform duration-300">
+              <p className="font-light text-sm md:text-base text-gray-1000 md:group-hover:translate-y-2 transition-transform duration-300">
                 Improve your visibility and rankings.
               </p>
             </div>
