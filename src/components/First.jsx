@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import pic3 from "../../public/pic3.png"; // Ensure the image is in the public directory
 import { MousePointer } from "lucide-react";
-import useRouter from "next/navigation";
+import{ useRouter} from "next/navigation";
 
 const First = () => {
   const router = useRouter();
