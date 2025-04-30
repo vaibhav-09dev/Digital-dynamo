@@ -2,6 +2,9 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import Image from "next/image";
+import logo from "../../public/dynamo2.png";
+import logo2 from "../../public/dynamo3.jpg"; // Ensure the image is in the public directory
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,14 +26,29 @@ const Navbar = () => {
     >
       <div className="flex justify-between items-center opacity-80 bg-white h-[80px] w-full fixed  shadow-md z-50 transition-all duration-300">
         {/* Logo Section */}
-        <motion.div
-          className="h-[80px] w-[350px] flex justify-center items-center text-2xl font-bold text-green-500"
-          initial={{ opacity: 0, x: -50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
-        >
-          Logo
-        </motion.div>
+<Link href="/">
+  <motion.div
+    className="h-[60px] md:h-[80px] w-[200px] md:w-[350px] flex justify-center items-center text-xl md:text-2xl font-bold text-green-500"
+    initial={{ opacity: 0, x: -50 }}
+    animate={{ opacity: 1, x: 0 }}
+    transition={{ duration: 0.8 }}
+  >
+    <Image
+      src={logo}
+      alt="logo"
+      height={60}
+      width={60}
+      className="object-contain md:h-[80px] md:w-[80px]"
+    />
+    <Image
+      src={logo2}
+      alt="logo2"
+      height={90}
+      width={120}
+      className="object-contain md:h-[90px] md:w-[150px]"
+    />
+  </motion.div>
+</Link>
 
         {/* Desktop Navigation */}
         <motion.div

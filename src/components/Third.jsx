@@ -64,7 +64,7 @@ const Third = () => {
               />
 
               <motion.div
-                className="absolute -bottom-6 -right-6 rounded-lg bg-primary p-6 text-primary-foreground"
+                className="absolute -bottom-6 -right-3 rounded-lg bg-primary p-6 text-primary-foreground"
                 variants={{
                   hidden: { opacity: 0, scale: 0.8, rotate: -5 },
                   visible: {

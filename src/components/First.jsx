@@ -62,7 +62,7 @@ const First = () => {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.2, duration: 0.5 }}
             >
-              <span className="inline-block rounded-full bg-primary/10 px-4 py-1.5 text-lg font-medium text-green-600">
+              <span className="inline-block rounded-full bg-primary/10 px-4 py-1.5 text-2xl font-medium text-green-600">
                 Digital Dynamo
               </span>
             </motion.div>
