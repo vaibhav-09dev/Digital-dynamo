@@ -12,7 +12,7 @@ const Seventh = () => {
   };
 
   return (
-    <div className="h-auto md:h-[750px] w-full bg-gray-300">
+    <div className="h-auto md:h-[700px] w-full bg-gray-300">
       {/* Heading Section */}
       <motion.div
         className="flex justify-center items-center"

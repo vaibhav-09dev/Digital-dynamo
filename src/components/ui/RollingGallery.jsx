@@ -8,17 +8,14 @@ import {
 } from "framer-motion";
 
 const IMGS = [
-  "https://images.unsplash.com/photo-1528181304800-259b08848526?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "https://images.unsplash.com/photo-1506665531195-3566af2b4dfa?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?q=80&w=3456&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "https://images.unsplash.com/photo-1495103033382-fe343886b671?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "https://images.unsplash.com/photo-1506781961370-37a89d6b3095?q=80&w=3264&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "https://images.unsplash.com/photo-1599576838688-8a6c11263108?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "https://images.unsplash.com/photo-1494094892896-7f14a4433b7a?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "https://plus.unsplash.com/premium_photo-1664910706524-e783eed89e71?q=80&w=3869&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "https://images.unsplash.com/photo-1503788311183-fa3bf9c4bc32?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "https://images.unsplash.com/photo-1585970480901-90d6bb2a48b5?q=80&w=3774&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-];
+  "https://plannersevents.in/wp-content/uploads/2024/09/ace264e782335f0918ba2e22199b4a5d.png",
+  "https://shaandaarevents.com/wp-content/uploads/2024/06/Untitled-design-43.png",
+  "https://blissfulplans.com/wp-content/uploads/2023/01/Indian-weddings-in-Sri-Lanka.webp",
+  "https://wp-media-partyslate.imgix.net/2024/06/478608-scaled.jpg?auto=compress%2Cformat&fit=scale&h=840&ixlib=php-3.3.1&w=1260&wpsize=huge",
+  "https://media-api.xogrp.com/images/24fe6ab3-3117-4519-9105-1c7022ba013a~rs_768.h",
+  "https://media-api.xogrp.com/images/24fe6ab3-3117-4519-9105-1c7022ba013a~rs_768.h",
+ 
+ ];
 
 const RollingGallery = ({
   autoplay = false,
@@ -57,7 +54,7 @@ const RollingGallery = ({
     controls.start({
       rotateY: [startAngle, startAngle - 360],
       transition: {
-        duration: 20,
+        duration: 50,
         ease: "linear",
         repeat: Infinity,
       },
@@ -112,14 +109,14 @@ const RollingGallery = ({
         className="absolute top-0 left-0 h-full w-[48px] z-10"
         style={{
           background:
-            "linear-gradient(to left, rgba(0,0,0,0) 0%, #060606 100%)",
+            "",
         }}
       />
       <div
-        className="absolute top-0 right-0 h-full w-[48px] z-10"
+        className="absolute top-0 right-0 h-full w-[30px] z-10"
         style={{
           background:
-            "linear-gradient(to right, rgba(0,0,0,0) 0%, #060606 100%)",
+           ""
         }}
       />
 
@@ -139,12 +136,12 @@ const RollingGallery = ({
             width: cylinderWidth,
             transformStyle: "preserve-3d",
           }}
-          className="flex min-h-[200px] cursor-grab items-center justify-center [transform-style:preserve-3d]"
+          className="flex min-h-[300px] cursor-grab items-center justify-center [transform-style:preserve-3d]"
         >
           {images.map((url, i) => (
             <div
               key={i}
-              className="group absolute flex h-fit items-center justify-center p-[6%] [backface-visibility:hidden] md:p-[3%]"
+              className="group absolute flex h-fit items-center justify-center p-[6%] [backface-visibility:hidden] md:p-[5.5%]"
               style={{
                 width: `${faceWidth}px`,
                 transform: `rotateY(${(360 / faceCount) * i
@@ -154,9 +151,9 @@ const RollingGallery = ({
               <img
                 src={url}
                 alt="gallery"
-                className="pointer-events-none h-[200px] w-[300px] rounded-[15px] border-[3px] border-white object-cover
+                className="pointer-events-none h-[170px] w-[200px] rounded-[15px] border-[3px] border-white object-cover
                            transition-transform duration-400 ease-out group-hover:scale-105
-                           sm:h-[200px] sm:w-[500px]"
+                           sm:h-[200px] sm:w-[300px]"
               />
             </div>
           ))}

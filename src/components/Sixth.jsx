@@ -33,7 +33,7 @@ const Sixth = () => {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1 }}
       >
-        <div className="bg-white h-auto md:h-[650px] w-full md:w-[650px] p-4 md:p-0 rounded-lg shadow-lg">
+        <div className="bg-white h-auto md:h-[650px] w-[350] mt-4 mb-4 md:w-[650px] p-4 md:p-0 rounded-lg shadow-lg">
           <div className="mt-8 md:mt-28">
             <h1 className="text-2xl md:text-4xl font-bold underline-offset-8 text-center md:text-left md:ml-24 text-black">
               Strategy,<br /> Creativity & Results!
@@ -43,7 +43,7 @@ const Sixth = () => {
               Our approach is backed by  strategy, creativity, and optimized  for results.
             </h2>
             <br />
-            <p className="text-base md:text-lg text-gray-500 text-center md:text-left md:ml-24 leading-relaxed">
+            <p className="text-base md:text-lg text-gray-500 text-center md:text-left md:ml-32 leading-relaxed">
               We understand that each client and  each  project we <br /> undertake  is  different and so we have developed a <br />  repeatable  process that   we  know 
               works. Our methodology<br /> puts the user  at the heart of the  experience from  the start. <br />By working iteratively  through a  pre-defined set of stages,<br /> we  create beautiful and usable  solutions  that work hard and <br /> deliver targeted results.
             </p>

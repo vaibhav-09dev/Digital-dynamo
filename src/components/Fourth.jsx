@@ -14,7 +14,7 @@ const Fourth = () => {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1 }}
       >
-        <div className="bg-white h-auto md:h-[650px] w-full md:w-[600px] p-4 md:p-0 rounded-lg shadow-lg">
+        <div className="bg-white h-auto md:h-[650px] w-[350] mt-4 mb-4 md:w-[600px] p-4 md:p-0  rounded-lg shadow-lg">
           <div className="mt-8 md:mt-32">
             <h1 className="text-2xl md:text-4xl font-bold underline-offset-8 text-center md:text-left md:ml-32 text-black">
               Integrated Digital <br /> Solutions

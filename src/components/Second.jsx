@@ -15,7 +15,7 @@ const Second = () => {
   };
 
   return (
-    <div className="h-auto md:h-[550px] mb-2 bg-gray-200 flex flex-col md:flex-row justify-center items-end">
+    <div className="h-auto md:h-[550px] mb-1 bg-gray-200 flex flex-col md:flex-row justify-center items-center">
       {/* Left Section */}
       <div className="h-auto md:h-[550px] w-full md:w-[510px] flex justify-center items-center">
         <p className="text-4xl md:text-9xl font-bold mt-10 md:mt-20 ml-4 md:ml-8 text-center md:text-left animate-fadeInUp">
@@ -24,7 +24,7 @@ const Second = () => {
       </div>
 
       {/* Middle Section */}
-      <div className="bg-white h-auto md:h-[545px] w-full md:w-[510px] flex justify-center items-center">
+      <div className="bg-white h-auto md:h-[550px] w-full md:w-[510px] flex justify-center items-center">
         <div className="mt-6 p-4 md:p-0">
           <h1 className="text-2xl md:text-4xl font-bold underline-offset-8 text-center md:text-left md:ml-12 animate-slideInLeft">
             Digital.

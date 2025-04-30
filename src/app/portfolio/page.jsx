@@ -27,7 +27,7 @@ const projects = [
 
 const OurWork = () => {
   return (
-    <div className="h-auto w-full bg-gray-100 p-6 md:mt-20 md:p-12">
+    <div className="h-auto w-full bg-gray-100 p-6 md:mt-20 mt-20 md:p-12">
       {/* Title Section */}
       <motion.div
         className="text-center text-3xl md:text-5xl font-bold text-gray-800 mb-10"
