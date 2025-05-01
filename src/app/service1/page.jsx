@@ -1,6 +1,8 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
+import img1 from "../../../public/img1.webp"; // Ensure the image is in the public directory
 
 const page = () => {
   return (
@@ -12,14 +14,14 @@ const page = () => {
     >
       {/* Header Section */}
       <motion.div
-        className="w-full h-auto md:h-[400px] flex-row md:flex md:justify-center md:items-center"
+        className="w-full h-auto md:h-[400px] flex flex-col md:flex-row md:justify-center md:items-center"
         initial={{ y: -50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 1 }}
       >
         {/* Left Section */}
         <motion.div
-          className="w-full md:w-1/2 h-auto md:h-[400px] ml-4 md:ml-28 md:mt-60"
+          className="w-full md:w-1/2 h-auto md:h-[400px] px-4 md:px-8 md:ml-28 md:mt-60"
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 1 }}
@@ -34,44 +36,44 @@ const page = () => {
             & Planning <span className="text-green-500">Agency</span> <br /> <br />
           </motion.h1>
           <motion.p
-            className="text-base md:text-lg text-gray-500 text-left font-serif"
+            className="text-base md:text-lg text-gray-500 text-left font-serif leading-relaxed"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.5 }}
           >
             Have a look at our most innovative strategies here! <br /> <br />
-            The key to a successful campaign is a well thought-out strategy. The WeBeeSocial Delhi team, with their unmatched years of experience, create and execute
-            the ideal strategies and plans for your business, keeping in mind the final outcome and the end goal.
+            The key to a successful campaign is a well thought-out strategy. The Digital Dynamo Delhi team, with their unmatched years of experience, create and execute
+            the ideal strategies and plans for your business, keeping in mind the.
           </motion.p>
         </motion.div>
 
         {/* Right Section */}
         <motion.div
-          className="w-full md:w-1/2 h-auto md:h-[400px] bg-amber-100 flex justify-center items-center"
+          className="w-full md:w-1/2 h-auto md:h-[400px] flex justify-center items-center px-4 md:px-8"
           initial={{ x: 100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 1 }}
         >
-          <motion.p
-            className="text-gray-700 font-bold text-lg"
-            initial={{ scale: 0.8, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            transition={{ duration: 1, delay: 0.5 }}
-          >
-            Photo
-          </motion.p>
+          <Image
+            src={img1}
+            alt="Digital Marketing Strategy"
+            className="object-contain rounded-lg shadow-lg"
+            width={500}
+            height={400}
+            priority
+          />
         </motion.div>
       </motion.div>
 
       {/* Content Section */}
       <motion.div
-        className="ml-4 md:ml-28 w-full md:w-[1300px]"
+        className="ml-4 md:ml-28 w-full md:w-[1300px] px-4 md:px-8"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
       >
         <motion.p
-          className="text-base md:text-lg text-gray-500 text-left font-serif"
+          className="text-base md:text-lg text-gray-500 text-left font-serif leading-relaxed"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
