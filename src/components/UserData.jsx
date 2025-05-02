@@ -6,13 +6,13 @@ import axios from 'axios';
 const UserData = ({ users = [] }) => {
   
 
-  console.log(userList); // Debug userList state
+  console.log(users); // Debug userList state
 
   const handleDelete = async (id) => {
     try {
       await axios.delete(`https://dynamo-ihj9.vercel.app/api/Delete?id=${id}`).then((res) => {
         alert('Request Deleted Successfully');
-        setUserList(userList.filter((user) => user._id !== id));
+        setUserList(users.filter((user) => user._id !== id));
       });
     } catch (error) {
       console.log('Error in deleting:', error);
@@ -47,7 +47,7 @@ const UserData = ({ users = [] }) => {
                   <td className="py-3 px-4 border-b border-gray-200 text-center">
                     <button
                       onClick={() => handleDelete(user._id)}
-                      className="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-3  transition duration-300"
+                      className="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-3 rounded  transition duration-300"
                     >
                       Delete
                     </button>
