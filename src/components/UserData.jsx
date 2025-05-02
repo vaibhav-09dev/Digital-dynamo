@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
-const Userdata = ({ users = [] }) => {
+const UserData = ({ users = [] }) => {
   const [userList, setUserList] = useState(users);
 
   console.log(userList); // Debug userList state
@@ -69,4 +69,4 @@ const Userdata = ({ users = [] }) => {
   );
 };
 
-export default Userdata;
+export default UserData;

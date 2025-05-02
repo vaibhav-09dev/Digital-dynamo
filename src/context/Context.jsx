@@ -1,6 +1,6 @@
 'use client';
 import React, { useState, useEffect } from 'react';
-import Userdata from '@/components/UserData';
+import UserData from '@/components/UserData';
 import axios from 'axios';
 
 const Context = () => {
@@ -24,7 +24,7 @@ const Context = () => {
 
   return (
     <div className="p-6 bg-gray-100 min-h-screen">
-      <Userdata users={users} />
+      <UserData users={users} />
     </div>
   );
 };
