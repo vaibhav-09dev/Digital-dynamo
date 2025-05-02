@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 
 const UserData = ({ users = [] }) => {
-  const [userList, setUserList] = useState(users);
+  
 
   console.log(userList); // Debug userList state
 
@@ -35,7 +35,7 @@ const UserData = ({ users = [] }) => {
             </tr>
           </thead>
           <tbody>
-            {Array.isArray(userList) && userList.map((user) => (
+            {Array.isArray(users) && users.map((user) => (
                 <tr key={user._id} className="hover:bg-gray-100 transition duration-300">
                   <td className="py-3 px-4 border-b border-gray-200 text-sm md:text-base text-gray-700">{user.Name}</td>
                   <td className="py-3 px-4 border-b border-gray-200 text-sm md:text-base text-gray-700">{user.email}</td>
