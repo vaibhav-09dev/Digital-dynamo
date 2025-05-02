@@ -4,14 +4,14 @@ import React, { useState } from 'react';
 import axios from 'axios';
 
 const Userdata = ({ users = [] }) => {
-  const [userList, setUserList] = useState(users); // Use local state to manage users
+  const [UserList, setUserList] = useState(users); // Use local state to manage users
  
   const handeldelete = async (id) => {
     try {
       await axios.delete(`https://dynamo-ihj9.vercel.app/api/Delete?id=${id}`).then((res) => {
         alert('Request Deleted Successfully');
         // Update the local state instead of reloading the page
-        setUserList(userList.filter((user) => user._id !== id));
+        setUserList(UserList.filter((user) => user._id !== id));
       });
     } catch (error) {
       console.log('Error in deleting:', error);
@@ -34,8 +34,8 @@ const Userdata = ({ users = [] }) => {
             </tr>
           </thead>
           <tbody>
-            {Array.isArray(userList) && userList.length > 0 ? (
-              userList.map((user) => (
+            {Array.isArray(UserList) && UserList.length > 0 ? (
+              UserList.map((user) => (
                 <tr key={user._id} className="hover:bg-gray-100 transition duration-300">
                   <td className="py-3 px-4 border-b border-gray-200 text-sm md:text-base text-gray-700">{user.Name}</td>
                   <td className="py-3 px-4 border-b border-gray-200 text-sm md:text-base text-gray-700">{user.email}</td>
