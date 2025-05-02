@@ -47,7 +47,7 @@ const UserData = ({ users = [] }) => {
                   <td className="py-3 px-4 border-b border-gray-200 text-center">
                     <button
                       onClick={() => handleDelete(user._id)}
-                      className="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-3 rounded transition duration-300"
+                      className="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-3  transition duration-300"
                     >
                       Delete
                     </button>
