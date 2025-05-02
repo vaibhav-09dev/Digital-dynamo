@@ -41,7 +41,7 @@ const About2 = () => {
             transition={{ duration: 1 }}
           >
             <h1 className="text-3xl md:text-5xl font-bold underline-offset-8 text-left md:text-left">
-              What <motion.span className="text-green-500" animate={{ scale: [1, 1.1, 1] }} transition={{ duration: 1.5, repeat: Infinity }}>We Do?</motion.span>
+              What <motion.span className="text-[#4156b3]" animate={{ scale: [1, 1.1, 1] }} transition={{ duration: 1.5, repeat: Infinity }}>We Do?</motion.span>
             </h1>
             <br /> <br />
             <motion.p

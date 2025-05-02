@@ -28,7 +28,7 @@ const page = () => {
         >
           <h1 className="text-3xl md:text-5xl font-bold underline-offset-8 text-left">
             Leading Search Engine Optimization{" "}
-            <span className="text-green-500">Agency in Delhi, India</span>
+            <span className="text-[#4052a4]">Agency in Delhi, India</span>
             <br /> <br />
           </h1>
           <p className="text-base md:text-lg text-gray-500 text-left font-serif leading-relaxed">

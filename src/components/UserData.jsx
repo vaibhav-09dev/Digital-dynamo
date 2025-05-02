@@ -8,7 +8,7 @@ const Userdata = ({ users = [] }) => {
  
   const handeldelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:3000/api/Delete?id=${id}`).then((res) => {
+      await axios.delete(`https://dynamo-ihj9.vercel.app/api/Delete?id=${id}`).then((res) => {
         alert('Request Deleted Successfully');
         // Update the local state instead of reloading the page
         setUserList(userList.filter((user) => user._id !== id));

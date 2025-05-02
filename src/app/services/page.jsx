@@ -16,7 +16,7 @@ const page = () => {
         {/* Sidebar Section */}
         <div className="bg-gray-800 h-[200px] md:h-[1900px] w-full md:w-1/3 text-4xl md:text-7xl">
           <p className="md:fixed mt-20 md:mt-72 ml-10 md:ml-20 text-white font-bold font-sans animate-fadeIn">
-            Our <br /> <span className="text-green-500">Services</span>
+            Our <br /> <span className="text-[#475ab1]">Services</span>
           </p>
         </div>
 
@@ -98,7 +98,7 @@ const page = () => {
               <br />
               <button
                 onClick={service.action}
-                className="md:ml-12 relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-teal-300 to-lime-300 group-hover:from-teal-400 group-hover:to-lime-400 dark:text-white dark:hover:text-gray-900 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-lime-800 transition-transform transform hover:scale-105"
+                className="md:ml-12 relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-600 group-hover:from-cyan-500 group-hover:to-blue-600 dark:text-white dark:hover:text-gray-900 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-lime-800 transition-transform transform hover:scale-105"
               >
                 <span className="text-lg font-bold relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent">
                   Read More

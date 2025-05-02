@@ -7,7 +7,7 @@ const Context = () => {
     const [users, setusers] = useState([])
     const fetchall=async()=>{
         try {
-            const res=await axios.get('http://localhost:3000/api/All')
+            const res=await axios.get('https://dynamo-ihj9.vercel.app/api/All')
             setusers(res.data.alluser)
             
             

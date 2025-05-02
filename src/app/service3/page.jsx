@@ -11,7 +11,7 @@ const page = () => {
         {/* Left Section */}
         <div className="w-full md:w-1/2 h-auto md:h-[400px] px-4 md:px-8 md:ml-28">
           <h1 className="text-3xl md:text-5xl font-bold underline-offset-8 text-left">
-            Creative <span className="text-green-500">Social Media Marketing</span> Agency in India
+            Creative <span className="text-[#4052a4]">Social Media Marketing</span> Agency in India
             <br /> <br />
           </h1>
           <p className="text-base md:text-lg text-gray-500 text-left font-serif leading-relaxed">

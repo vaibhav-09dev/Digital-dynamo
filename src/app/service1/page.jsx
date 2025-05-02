@@ -32,8 +32,8 @@ const page = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
           >
-            Digital Marketing <span className="text-green-500">Strategy</span> <br />
-            & Planning <span className="text-green-500">Agency</span> <br /> <br />
+            Digital Marketing <span className="text-[#4052a4]">Strategy</span> <br />
+            & Planning <span className="text-[#4052a4]">Agency</span> <br /> <br />
           </motion.h1>
           <motion.p
             className="text-base md:text-lg text-gray-500 text-left font-serif leading-relaxed"

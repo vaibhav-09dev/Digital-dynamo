@@ -19,7 +19,7 @@ const Second = () => {
       {/* Left Section */}
       <div className="h-auto md:h-[550px] w-full md:w-[510px] flex justify-center items-center">
         <p className="text-4xl md:text-9xl font-bold mt-10 md:mt-20 ml-4 md:ml-8 text-center md:text-left animate-fadeInUp">
-          What We <br /> <span className="text-green-500 animate-pulse">do ?</span>
+          What We <br /> <span className="text-[#182f94] animate-pulse">do ?</span>
         </p>
       </div>
 
@@ -42,7 +42,7 @@ const Second = () => {
           <div className="flex justify-center md:justify-start">
             <button
               onClick={senda}
-              className="md:ml-12 relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-teal-300 to-lime-300 group-hover:from-teal-400 group-hover:to-lime-400 dark:text-white dark:hover:text-gray-900 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-lime-800 transition-transform transform hover:scale-110 animate-bounce"
+              className="md:ml-12 relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-[#2441c4] to-blue-500 group-hover:from-[#213aac] group-hover:to-[#182f94] dark:text-white dark:hover:text-gray-900 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-lime-800 transition-transform transform hover:scale-110 animate-bounce"
             >
               <span className="text-xl font-bold relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent">
                 ABOUT US
@@ -71,7 +71,7 @@ const Second = () => {
           <div className="flex justify-center md:justify-start">
             <button
               onClick={sends}
-              className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-teal-300 to-lime-300 group-hover:from-teal-400 group-hover:to-lime-400 dark:text-white dark:hover:text-gray-900 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-lime-800 transition-transform transform hover:scale-110 animate-bounce"
+              className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-[#2441c4] to-blue-500 group-hover:from-[#213aac] group-hover:to-[#182f94] dark:text-white dark:hover:text-gray-900 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-lime-800 transition-transform transform hover:scale-110 animate-bounce"
             >
               <span className="text-xl font-bold relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent">
                 OUR SERVICES

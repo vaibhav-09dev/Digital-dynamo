@@ -13,7 +13,7 @@ const About3 = () => {
         transition={{ duration: 1 }}
       >
         <h1>
-          The <span className="text-green-500 animate-pulse">Leadership</span>
+          The <span className="text-[#4156b3] animate-pulse">Leadership</span>
         </h1>
       </motion.div>
 

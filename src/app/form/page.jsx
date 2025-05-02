@@ -21,7 +21,7 @@ const page = () => {
   const Send = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:3000/api/ConsumerData", user).then((res) => {
+      await axios.post("https://dynamo-ihj9.vercel.app/api/ConsumerData", user).then((res) => {
         alert("Request sent successfully!");
         setuser({
           Name: "",
@@ -31,7 +31,7 @@ const page = () => {
           phone: "",
         });
       });
-      await axios.get("http://localhost:3000/api/Sendmail");
+      await axios.get("https://dynamo-ihj9.vercel.app/api/Sendmail");
     } catch (error) {
       console.log("Error in sending:", error);
       alert("Failed to send the request. Please try again.");
@@ -53,7 +53,7 @@ const page = () => {
     transition={{ duration: 1 }}
   >
     <h1 className="text-4xl md:text-5xl font-serif font-bold text-gray-800">
-      Let's Connect! <span className="text-green-500">We'd love to hear from you</span>
+      Let's Connect! <span className="text-[#213798]">We'd love to hear from you</span>
     </h1>
     <p className="text-lg md:text-xl font-mono text-gray-700 italic mt-4">
       Whether it's coffee, beer, or just a chat, we're here for you. Drop us a message or visit us!
@@ -70,20 +70,12 @@ const page = () => {
       transition={{ duration: 1 }}
     >
       <h2 className="text-2xl md:text-4xl font-bold font-serif md:mt-20 text-gray-800 mb-6">Contact Information</h2>
-      <div className="mb-6">
-        <h3 className="text-lg md:text-2xl font-extrabold text-gray-700">Address:</h3>
-        <a
-          href="https://maps.app.goo.gl/4cyVkthAUdaGBJ6H7"
-          className="text-gray-600 hover:text-green-500 font-bold text-lg md:text-xl"
-        >
-          S-76, Block S, Part 2, Greater Kailash, New Delhi, Delhi 110048
-        </a>
-      </div>
+     
       <div className="mb-6">
         <h3 className="text-lg md:text-2xl font-extrabold text-gray-700">Call Us:</h3>
         <a
           href="tel:+919711647737"
-          className="text-gray-600 hover:text-green-500 font-bold text-lg md:text-xl"
+          className="text-gray-600 hover:text-[#182f94] font-bold text-lg md:text-xl"
         >
           +91 9711647737
         </a>

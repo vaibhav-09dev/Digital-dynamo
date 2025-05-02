@@ -24,7 +24,7 @@ const About1 = () => {
             <h1 className="text-3xl md:text-6xl font-bold underline-offset-8 text-left">
               ABOUT{' '}
               <motion.span
-                className="text-green-500"
+                className="text-[#4156b3]"
                 animate={{ scale: [1, 1.1, 1] }}
                 transition={{ duration: 1.5, repeat: Infinity }}
               >

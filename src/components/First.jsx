@@ -62,7 +62,7 @@ const First = () => {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.2, duration: 0.5 }}
             >
-              <span className="inline-block rounded-full bg-primary/10 px-4 py-1.5 text-2xl font-medium text-green-600">
+              <span className="inline-block rounded-full bg-primary/10 px-4 py-1.5 text-2xl font-medium text-blue-800">
                 Digital Dynamo
               </span>
             </motion.div>
@@ -97,10 +97,10 @@ const First = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.2, duration: 0.5 }}
             >
-              <button className="px-6 py-3 bg-green-600 text-white rounded-lg shadow-lg hover:bg-green-700 transition-all duration-300" onClick={con}>
+              <button className="px-6 py-3 bg-blue-800 text-white rounded-lg shadow-lg hover:bg-green-700 transition-all duration-300" onClick={con}>
                 Get Started
               </button>
-              <button className="px-6 py-3 bg-gray-100 text-green-600 rounded-lg shadow-lg hover:bg-gray-200 transition-all duration-300" onClick={abt}>
+              <button className="px-6 py-3 bg-gray-100 text-blue-800 rounded-lg shadow-lg hover:bg-gray-200 transition-all duration-300" onClick={abt}>
                 Learn More
               </button>
             </motion.div>

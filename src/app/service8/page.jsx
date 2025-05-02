@@ -27,7 +27,7 @@ const page = () => {
           transition={{ duration: 1 }}
         >
           <h1 className="text-3xl md:text-5xl font-bold underline-offset-8 text-left">
-            Web Analytics <span className="text-green-500">Agency</span>
+            Web Analytics <span className="text-[#4052a4]">Agency</span>
             <br /> <br />
           </h1>
           <p className="text-base md:text-lg text-gray-500 text-left font-serif leading-relaxed">

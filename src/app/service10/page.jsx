@@ -9,7 +9,7 @@ const page = () => {
       <div className="w-full h-auto md:h-[400px] flex-row md:flex md:justify-center md:items-center">
         <div className="w-full md:w-1/2 h-auto md:h-[400px] ml-4 md:ml-28">
           <h1 className="text-3xl md:text-5xl font-bold underline-offset-8 text-left">
-            Shopify Website & <br /> <span className="text-green-500">Development Agency</span>
+            Shopify Website & <br /> <span className="text-[#4052a4]">Development Agency</span>
             <br /> <br />
           </h1>
           <p className="text-base md:text-lg text-gray-500 text-left font-serif">

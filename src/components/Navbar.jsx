@@ -59,46 +59,46 @@ const Navbar = () => {
         >
           {/* Links */}
           <Link
-            className="hover:text-green-500 ml-10 transition-all duration-300 relative group"
+            className="hover:text-blue-800 ml-10 transition-all duration-300 relative group"
             href="/"
           >
             Home
-            <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-green-500 transition-all duration-300 group-hover:w-full"></span>
+            <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-blue-800 transition-all duration-300 group-hover:w-full"></span>
           </Link>
           <Link
-            className="hover:text-green-500 ml-10 transition-all duration-300 relative group"
+            className="hover:text-blue-800 ml-10 transition-all duration-300 relative group"
             href="/about"
           >
             About
-            <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-green-500 transition-all duration-300 group-hover:w-full"></span>
+            <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-blue-800 transition-all duration-300 group-hover:w-full"></span>
           </Link>
           <Link
-            className="hover:text-green-500 ml-10 transition-all duration-300 relative group"
+            className="hover:text-blue-800 ml-10 transition-all duration-300 relative group"
             href="/services"
           >
             Our Services
-            <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-green-500 transition-all duration-300 group-hover:w-full"></span>
+            <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-blue-800 transition-all duration-300 group-hover:w-full"></span>
           </Link>
           <Link
-            className="hover:text-green-500 ml-10 transition-all duration-300 relative group"
+            className="hover:text-blue-800 ml-10 transition-all duration-300 relative group"
             href="/portfolio"
           >
             Portfolio
-            <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-green-500 transition-all duration-300 group-hover:w-full"></span>
+            <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-blue-800 transition-all duration-300 group-hover:w-full"></span>
           </Link>
           <Link
-            className="hover:text-green-500 ml-10 transition-all duration-300 relative group"
+            className="hover:text-blue-800 ml-10 transition-all duration-300 relative group"
             href="/form"
           >
             Contact Us
-            <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-green-500 transition-all duration-300 group-hover:w-full"></span>
+            <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-blue-800 transition-all duration-300 group-hover:w-full"></span>
           </Link>
           <Link
-            className="hover:text-green-500 ml-10 transition-all duration-300 relative group"
+            className="hover:text-blue-800 ml-10 transition-all duration-300 relative group"
             href="/admin"
           >
             Admin
-            <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-green-500 transition-all duration-300 group-hover:w-full"></span>
+            <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-blue-800 transition-all duration-300 group-hover:w-full"></span>
           </Link>
         </motion.div>
 
@@ -135,52 +135,52 @@ const Navbar = () => {
           <div className="flex flex-col items-center py-4">
             {/* Links */}
             <Link
-              className="hover:text-green-500 py-2 transition-all duration-300 relative group"
+              className="hover:text-blue-800 py-2 transition-all duration-300 relative group"
               href="/"
               onClick={closeMenu}
             >
               Home
-              <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-green-500 transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-blue-800 transition-all duration-300 group-hover:w-full"></span>
             </Link>
             <Link
-              className="hover:text-green-500 py-2 transition-all duration-300 relative group"
+              className="hover:text-blue-800 py-2 transition-all duration-300 relative group"
               href="/about"
               onClick={closeMenu}
             >
               About
-              <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-green-500 transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-blue-800 transition-all duration-300 group-hover:w-full"></span>
             </Link>
             <Link
-              className="hover:text-green-500 py-2 transition-all duration-300 relative group"
+              className="hover:text-blue-800 py-2 transition-all duration-300 relative group"
               href="/services"
               onClick={closeMenu}
             >
               Our Services
-              <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-green-500 transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-blue-800 transition-all duration-300 group-hover:w-full"></span>
             </Link>
             <Link
-              className="hover:text-green-500 py-2 transition-all duration-300 relative group"
+              className="hover:text-blue-800 py-2 transition-all duration-300 relative group"
               href="/portfolio"
               onClick={closeMenu}
             >
               Portfolio
-              <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-green-500 transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-blue-800 transition-all duration-300 group-hover:w-full"></span>
             </Link>
             <Link
-              className="hover:text-green-500 py-2 transition-all duration-300 relative group"
+              className="hover:text-blue-800 py-2 transition-all duration-300 relative group"
               href="/form"
               onClick={closeMenu}
             >
               Contact Us
-              <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-green-500 transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-blue-800 transition-all duration-300 group-hover:w-full"></span>
             </Link>
             <Link
-              className="hover:text-green-500 py-2 transition-all duration-300 relative group"
+              className="hover:text-blue-800 py-2 transition-all duration-300 relative group"
               href="/admin"
               onClick={closeMenu}
             >
               Admin
-              <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-green-500 transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-blue-800 transition-all duration-300 group-hover:w-full"></span>
             </Link>
           </div>
         </motion.div>

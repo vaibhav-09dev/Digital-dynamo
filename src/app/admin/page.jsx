@@ -12,7 +12,7 @@ const page = () => {
     const submit=async(e)=>{
         e.preventDefault();
         try {
-            await axios.post("http://localhost:3000/api/Auth",admin).then((res)=>{
+            await axios.post("https://dynamo-ihj9.vercel.app/api/Auth",admin).then((res)=>{
                 router.push("/panel")
 
             })
