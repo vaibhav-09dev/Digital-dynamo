@@ -1,11 +1,12 @@
 "use client"
-import Context from '@/context/Context'
+import Userdata from '@/components/UserData'
+
 import React from 'react'
 
 const page = () => {
   return (
     <div>
-        <Context/>
+        <Userdata/>
     </div>
   )
 }
