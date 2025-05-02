@@ -34,7 +34,7 @@ const Userdata = ({ users = [] }) => {
             </tr>
           </thead>
           <tbody>
-            {Array.isArray(UserList) && UserList.length > 0 ? (
+            {Array.isArray(UserList)  (
               UserList.map((user) => (
                 <tr key={user._id} className="hover:bg-gray-100 transition duration-300">
                   <td className="py-3 px-4 border-b border-gray-200 text-sm md:text-base text-gray-700">{user.Name}</td>
@@ -54,13 +54,7 @@ const Userdata = ({ users = [] }) => {
                   </td>
                 </tr>
               ))
-            ) : (
-              <tr>
-                <td colSpan="6" className="py-3 px-4 text-center text-gray-500">
-                  No data available
-                </td>
-              </tr>
-            )}
+            ) }
           </tbody>
         </table>
       </div>
