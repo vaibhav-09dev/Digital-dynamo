@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import img1 from "../../../public/img1.webp";
+import img1 from "../../../public/img3.webp";
 import Image from "next/image";
 
 const page = () => {

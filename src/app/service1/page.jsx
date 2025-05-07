@@ -2,7 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import img1 from "../../../public/img1.webp"; // Ensure the image is in the public directory
+import img1 from "../../../public/img10.webp"; // Ensure the image is in the public directory
 
 const page = () => {
   return (
@@ -45,7 +45,7 @@ const page = () => {
             The key to a successful campaign is a well thought-out strategy. The Digital Dynamo Delhi team, with their unmatched years of experience, create and execute
             the ideal strategies and plans for your business, keeping in mind the.
           </motion.p>
-        </motion.div>
+        </motion.div> 
 
         {/* Right Section */}
         <motion.div

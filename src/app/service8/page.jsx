@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import img1 from "../../../public/img1.webp";
+import img1 from "../../../public/img8.webp";
 import Image from "next/image";
 import { motion } from "framer-motion";
 

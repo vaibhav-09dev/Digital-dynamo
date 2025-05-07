@@ -83,10 +83,10 @@ const page = () => {
       <div>
         <h3 className="text-lg md:text-2xl font-extrabold text-gray-700">Email Us:</h3>
         <a
-          href="mailto:Ankur@wellcometours.com"
-          className="text-gray-600 hover:text-green-500 font-bold text-lg md:text-xl"
+          href="mailto:Ddynamo193@gmail.com"
+          className="text-gray-600 hover:text-[#182f94] font-bold text-lg md:text-xl"
         >
-          Ankur@wellcometours.com
+          Ddynamo193@gmail.com
         </a>
       </div>
     </motion.div>

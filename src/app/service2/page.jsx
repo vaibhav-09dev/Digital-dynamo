@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import img1 from "../../../public/img1.webp";
+import img1 from "../../../public/img2.webp";
 import Image from "next/image";
 
 const page = () => {

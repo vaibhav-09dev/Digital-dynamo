@@ -109,7 +109,7 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="https://www.instagram.com"
+                href="https://www.instagram.com/digitalldynamo2/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-green-400"

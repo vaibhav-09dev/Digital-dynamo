@@ -6,44 +6,66 @@ import { motion, useInView, useAnimation, AnimatePresence, useScroll, useTransfo
 import {
   BarChart3,
   ChevronRight,
-  Globe,
-  Lightbulb,
-  LineChart,
-  Menu,
-  MessageSquare,
-  Search,
-  TrendingUp,
-  X,
-  ArrowRight,
-  MousePointer,
-  ArrowUpRight,
-} from "lucide-react"
+  } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 
 
 const Seventh = () => {
+  const controls = useAnimation();
+  const ref = useRef(null);
+  const inView = useInView(ref, { once: true, threshold: 0.2 });
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
+
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        type: "spring",
+        stiffness: 100,
+        damping: 10,
+      },
+    },
+  };
+
   const { scrollY } = useScroll()
   
 
   const testimonials = [
     {
       quote:
-        "DigiGrowth transformed our online presence. Their SEO strategy increased our organic traffic by 200% in just 6 months.",
+        "Digital Dynamo transformed our online presence. Their SEO strategy increased our organic traffic by 200% in just 6 months.",
       author: "Sarah Johnson",
       role: "Marketing Director, TechCorp",
       avatar: "/placeholder.svg?height=100&width=100",
     },
     {
       quote:
-        "The team at DigiGrowth is exceptional. Their content marketing strategy helped us establish ourselves as thought leaders in our industry.",
+        "The team at Digital Dynamo is exceptional. Their content marketing strategy helped us establish ourselves as thought leaders in our industry.",
       author: "Michael Chen",
       role: "CEO, Innovate Solutions",
       avatar: "/placeholder.svg?height=100&width=100",
     },
     {
       quote:
-        "Working with DigiGrowth has been a game-changer for our business. Their PPC campaigns delivered a 300% ROI in the first quarter.",
+        "Working with Digital Dynamo has been a game-changer for our business. Their PPC campaigns delivered a 300% ROI in the first quarter.",
       author: "Emily Rodriguez",
       role: "E-commerce Manager, StyleShop",
       avatar: "/placeholder.svg?height=100&width=100",
@@ -53,115 +75,13 @@ const Seventh = () => {
   const [active, setActive] = useState(0)
 
 
-  const projects = [
-    {
-      title: "E-commerce SEO Overhaul",
-      category: "SEO Optimization",
-      image: "/placeholder.svg?height=400&width=600",
-    },
-    {
-      title: "Social Media Campaign",
-      category: "Social Media",
-      image: "/placeholder.svg?height=400&width=600",
-    },
-    {
-      title: "Content Strategy",
-      category: "Content Marketing",
-      image: "/placeholder.svg?height=400&width=600",
-    },
-    {
-      title: "PPC Campaign",
-      category: "PPC Advertising",
-      image: "/placeholder.svg?height=400&width=600",
-    },
-  ]
+  
 
   return (
     
 
       <div className="container relative z-10">
-        <AnimatedSection>
-          <motion.div
-            className="text-center max-w-3xl mx-auto mb-16 space-y-4"
-            variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }}
-          >
-           
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
-              <TextReveal text="Recent Success Stories" delay={0.1} />
-            </h2>
-            <p className="text-xl text-muted-foreground">
-              Take a look at some of our recent projects and the results we've achieved for our clients.
-            </p>
-          </motion.div>
-
-          <div className="grid gap-8 md:grid-cols-2">
-            {projects.map((project, index) => {
-              const workSectionY = useTransform(scrollY, [1600, 2200], [0, index % 2 === 0 ? -30 : -50])
-              return (
-                <motion.div
-                  key={index}
-                  className="group relative overflow-hidden rounded-lg"
-                  variants={{
-                    hidden: { opacity: 0, y: 20 },
-                    visible: {
-                      opacity: 1,
-                      y: 0,
-                      transition: { delay: index * 0.1 },
-                    },
-                  }}
-                  whileHover={{
-                    y: -10,
-                    transition: { type: "spring", stiffness: 300 },
-                  }}
-                  style={{ y: workSectionY }}
-                >
-                  <motion.div whileHover={{ scale: 1.1 }} transition={{ duration: 0.6 }}>
-                    <Image
-                      src={project.image || "/placeholder.svg"}
-                      alt={project.title}
-                      width={600}
-                      height={400}
-                      className="w-full object-cover transition-transform duration-300"
-                    />
-                  </motion.div>
-
-                  <motion.div
-                    className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"
-                    initial={{ opacity: 0 }}
-                    whileHover={{ opacity: 1 }}
-                    transition={{ duration: 0.3 }}
-                  />
-
-                  <motion.div
-                    className="absolute bottom-0 left-0 p-6"
-                    initial={{ opacity: 0, y: 20 }}
-                    whileHover={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.3, delay: 0.1 }}
-                  >
-                    <motion.span
-                      className="inline-block rounded-full bg-primary/20 backdrop-blur-sm px-3 py-1 text-xs font-medium text-primary-foreground mb-2"
-                      whileHover={{ scale: 1.05 }}
-                    >
-                      {project.category}
-                    </motion.span>
-                    <h3 className="text-xl font-bold text-white">{project.title}</h3>
-                    <motion.div
-                      className="mt-2 flex items-center text-white"
-                      initial={{ x: -10, opacity: 0 }}
-                      whileHover={{ x: 0, opacity: 1 }}
-                      transition={{ duration: 0.2 }}
-                    >
-                      <span className="text-sm font-medium">View Case Study</span>
-                      <motion.span whileHover={{ x: 5 }} transition={{ duration: 0.2 }}>
-                        <ChevronRight className="ml-1 h-4 w-4" />
-                      </motion.span>
-                    </motion.div>
-                  </motion.div>
-                </motion.div>
-              )
-            })}
-          </div>
-        </AnimatedSection>
+       
         <section id="testimonials" className="py-20 relative overflow-hidden">
       {/* Animated quote marks background with parallax */}
       

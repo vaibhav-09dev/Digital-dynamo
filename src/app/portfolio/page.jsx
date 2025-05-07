@@ -1,70 +1,139 @@
-'use client';
-import React from 'react';
-import { motion } from 'framer-motion';
+"use client";
 
+import { useEffect, useRef } from "react";
+import { motion, useAnimation, useInView } from "framer-motion";
 const projects = [
   {
-    title: 'Project 1',
-    description: 'A creative campaign for a leading e-commerce brand.',
-    image: '/project1.jpg',
+      name: "THRIVIN",
+      location: "ACE Certified Nutrition Specialist",
+      image: "/p1.jpg?height=300&width=500",
+      link: "https://www.instagram.com/thrivinwithektaa?igsh=MjR5dTVmMzA4NGl2",
   },
   {
-    title: 'Project 2',
-    description: 'A social media strategy for a global tech company.',
-    image: '/project2.jpg',
+      name: "DK-Fitness Studio",
+      location: "Gym/Physical Fitness Center",
+      image: "/p2.jpg?height=400&width=600",
+      link: "https://www.instagram.com/dkfitnessstudio?igsh=MWphNWRxd3R1ejFsZg==",
   },
   {
-    title: 'Project 3',
-    description: 'A website redesign for a retail giant.',
-    image: '/project3.jpg',
+      name: "The Hair House Salon",
+      location: "Your hub for hair, color, skincare & Makeup Nails, pamper, repeat!",
+      image: "/p3.jpg?height=400&width=600",
+      link: "https://www.instagram.com/the.hairhousesalon?igsh=NXhqMzEzeHlkbTFw",
   },
   {
-    title: 'Project 4',
-    description: 'A performance marketing campaign for a startup.',
-    image: '/project4.jpg',
+      name: "The Astro Nexus",
+      location: "Team of professional Astrologist, Numerologist and Vastu Experts. ",
+      image: "/p4.jpg?height=400&width=600",
+      link: "https://www.instagram.com/theastronexus?igsh=MzluamI3NGU0OTdr",
   },
+  {
+    name: "JS TAILORS & DRAPERS",
+    location: "We are the creators of your style statement ",
+    image: "/p5.jpg?height=400&width=600",
+    link: "https://www.instagram.com/jstailors1976?igsh=cHJsbW9xcGJqMncx",
+},
 ];
 
 const OurWork = () => {
-  return (
-    <div className="h-auto w-full bg-gray-100 p-6 md:mt-20 mt-20 md:p-12">
-      {/* Title Section */}
-      <motion.div
-        className="text-center text-3xl md:text-5xl font-bold text-gray-800 mb-10"
-        initial={{ opacity: 0, y: -50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-      >
-        <h1>
-          Our <span className="text-green-500 animate-pulse">Work</span>
-        </h1>
-      </motion.div>
-
-      {/* Projects Section */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {projects.map((project, index) => (
-          <motion.div
-            key={index}
-            className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, delay: index * 0.2 }}
-            whileHover={{ scale: 1.05 }}
-          >
-            <img
-              src={project.image}
-              alt={project.title}
-              className="w-full h-48 object-cover"
-            />
-            <div className="p-4">
-              <h2 className="text-xl font-bold text-gray-800">{project.title}</h2>
-              <p className="text-gray-600 mt-2">{project.description}</p>
-            </div>
-          </motion.div>
-        ))}
-      </div>
-    </div>
-  );
+  const controls = useAnimation();
+     const ref = useRef(null);
+     const inView = useInView(ref, { once: true, threshold: 0.2 });
+ 
+     useEffect(() => {
+         if (inView) {
+             controls.start("visible");
+         }
+     }, [controls, inView]);
+ 
+     const containerVariants = {
+         hidden: { opacity: 0 },
+         visible: {
+             opacity: 1,
+             transition: {
+                 staggerChildren: 0.2,
+             },
+         },
+     };
+ 
+     const itemVariants = {
+         hidden: { opacity: 0, y: 50 },
+         visible: {
+             opacity: 1,
+             y: 0,
+             transition: {
+                 type: "spring",
+                 stiffness: 100,
+                 damping: 10,
+             },
+         },
+     };
+ 
+     return (
+         <section
+             className="container md:py-16 py-20 mt-4 w-full md:px-2.5 px-1 md:mb-8 bg-white xl:max-w-[1280px] xl:mx-auto"
+             ref={ref}
+         >
+             {/* Title Section */}
+             <motion.div
+                 className="flex flex-col items-center text-center mb-12"
+                 initial={{ opacity: 0, y: 20 }}
+                 animate={controls}
+                 variants={{
+                     hidden: { opacity: 0, y: 20 },
+                     visible: { opacity: 1, y: 0 },
+                 }}
+             >
+                 <h2 className="text-3xl md:text-5xl xl:text-6xl font-extrabold tracking-tight text-gray-800">
+                     Our Work
+                 </h2>
+                 <p className="mt-4 max-w-2xl text-gray-600 text-lg md:text-xl xl:text-2xl">
+                     Discover our diverse range of projects that showcase our expertise in various domains.
+                 </p>
+             </motion.div>
+ 
+             {/* Destinations Grid */}
+             <motion.div
+                 className="grid grid-cols-1 md:grid-cols-2 gap-6 xl:gap-8"
+                 variants={containerVariants}
+                 initial="hidden"
+                 animate={controls}
+             >
+                 {projects.map((project, index) => (
+                     <motion.div
+                         key={index}
+                         className="overflow-hidden rounded-lg shadow-lg group bg-white hover:shadow-2xl transition-shadow duration-300"
+                         variants={itemVariants}
+                         whileHover={{ scale: 1.05 }}
+                     >
+                         <a href={project.link}>
+                             <div className="relative h-64 w-full overflow-hidden xl:h-[600]">
+                                 <motion.img
+                                     src={project.image}
+                                     alt={project.name}
+                                     className="object-fill w-full h-full group-hover:scale-110 transition-transform duration-500"
+                                 />
+                                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
+                                 <div className="absolute bottom-0 left-0 p-4 text-white">
+                                     <div className="flex items-center gap-1 mb-1">
+ 
+ 
+                                     </div>
+                                     <h3 className="text-xl xl:text-2xl font-bold">
+                                         {project.name}
+                                     </h3>
+                                     <span className="text-sm xl:text-base">
+                                         {project.location}
+                                     </span>
+                                 </div>
+                             </div>
+                         
+                         </a>
+                     </motion.div>
+                 ))}
+             </motion.div>
+         </section>
+     );
 };
 
 export default OurWork;
